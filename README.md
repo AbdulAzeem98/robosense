@@ -90,25 +90,4 @@ to learn long-range temporal dependencies. LSTMs typically need far
 more data to outperform well-engineered features — a genuinely useful,
 honest finding to report rather than a limitation to hide.
 
-## Report / slide structure (5-6 slides)
 
-1. Problem: predictive maintenance for robotic assembly systems
-2. Architecture (data → features → model comparison → SHAP)
-3. XGBoost vs LSTM results + why one wins
-4. SHAP explainability — which sensor readings drive each failure type
-5. Live demo screenshot
-6. Limitations (small dataset, single robot arm) + next steps (more
-   data, sensor fusion, deployment on real hardware)
-
-## Submitting to GitHub
-
-```bash
-cd robosense_project
-git init
-git add .
-git commit -m "RoboSense: robot failure diagnosis with XGBoost/LSTM comparison + SHAP"
-git branch -M main
-git remote add origin https://github.com/<your-username>/robosense.git
-git push -u origin main
-```
-Add a `.gitignore` excluding `venv/` and `__pycache__/` before committing.
